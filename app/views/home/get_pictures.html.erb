@@ -4,13 +4,11 @@
   the FB.login() function when clicked.
 -->
 <div id="facebookLogin">
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button>
+  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+  </fb:login-button>
 </div>
 
 <div id="status">
 </div>
 
-<div id="continue" class="hidden">
-    <%= link_to 'Click here', 'home/get_pictures' %>
-</div>
+<div id="fb-pictures" onclick="getPictures();"></div>
